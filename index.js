@@ -1,7 +1,4 @@
 const inquirer = require('inquirer');
-// const mysql = requre('mysql2');
-// const cTable = require('console.table');
-
 const {
   viewAllDepartments,
   viewAllRoles,
@@ -34,38 +31,25 @@ function init() {
     .then((answer) => {
       switch (answer.action) {
         case "View all departments":
-          console.log(answer.action);
           viewAllDepartments();
-          // init();
           break;
         case "View all roles":
-          console.log(answer.action);
           viewAllRoles();
-          // init();
           break;
         case "View all employees":
-          console.log(answer.action);
           viewAllEmployees();
-          // init();
           break;
         case "Add a department":
-          console.log(answer.action);
           addDepartment();
-          // init();
           break;
         case "Add a role":
-          console.log(answer.action);
           addRole();
           break;
         case "Add an employee":
-          console.log(answer.action);
           addEmployee();
-          // init();
           break;
         case "Update an employee role":
-          console.log(answer.action);
           updateEmployeeRole();
-          // init();
           break;
         default:
           console.log('Error: the selected option is not working!');
@@ -75,4 +59,3 @@ function init() {
 };
 
 init();
-// viewAllEmployees();
