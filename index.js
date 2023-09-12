@@ -43,7 +43,7 @@ function init() {
           viewAllRoles();
           // init();
           break;
-        case "View all Employees":
+        case "View all employees":
           console.log(answer.action);
           viewAllEmployees();
           // init();
@@ -55,14 +55,20 @@ function init() {
           break;
         case "Add a role":
           console.log(answer.action);
+          addRole();
           break;
         case "Add an employee":
           console.log(answer.action);
+          addEmployee();
           // init();
           break;
         case "Update an employee role":
           console.log(answer.action);
+          updateEmployeeRole();
           // init();
+          break;
+        default:
+          console.log('Error: the selected option is not working!');
           break;
       }
     })
